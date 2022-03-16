@@ -1,0 +1,24 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "Homework from Class03",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ext js app.js",
+    "start-dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkoBundalevski/Node-JS.git"
+  },
+  "author": "Marko Bundalevski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkoBundalevski/Node-JS/issues"
+  },
+  "homepage": "https://github.com/MarkoBundalevski/Node-JS#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
