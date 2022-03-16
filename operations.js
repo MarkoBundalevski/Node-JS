@@ -1,16 +1,25 @@
 const path = require("path");
 const fs = require("fs");
-const fsProm = require("fs/promises");
 const fileName = "homework.text";
 
-async function insertTextRecord(newText){
-
-    fs.writeFile(path.join(__dirname, "homework", "homework.txt"));
-    newText = "Hello from out first Node homework";
+function insertTextRecord(newText){
+    fs.writeFile(path.join(fileName, newText, function(parameter){
+        if(parameter){
+            console.log("Error!");
+            return;
+        }
+    }));
 }
 
 function readFile(){
     return fs.readFileSync(fileName, {encoding : 'utf-8'})
+}
+
+function readJsonFile(){
+    let jsonContent = fs.readFileSync("homework.json", {encoding : 'utf-8'});
+    console.log(jsonContent);
+    let jsonObject = JSON.parse(jsonContent);
+    console.log(jsonObject);
 }
 
 function appendFile(text){
@@ -25,5 +34,6 @@ function appendFile(text){
 module.exports = {
     insertTextRecord,
     readFile,
-    appendFile
+    appendFile,
+    readJsonFile
 }

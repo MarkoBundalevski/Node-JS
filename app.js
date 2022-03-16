@@ -6,4 +6,7 @@ if (!fs.existsSync(path.join(__dirname, "homework"))) {
     fs.mkdir(path.join(__dirname, "homework"));
 }
 
-operations.insertTextRecord();
+operations.insertTextRecord("Hello from our first Node homework");
+console.log(operations.readFile());
+operations.readJsonFile();
+operations.appendFile("\nFINISHED!");
