@@ -1,0 +1,12 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "First assignment of our Class04 Node JS Homework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Marko Bundalevski",
+  "license": "ISC"
+}
